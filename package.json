@@ -1,0 +1,40 @@
+{
+  "name": "package-skeleton",
+  "version": "0.0.0",
+  "description": "A skeleton repo as a starting point for your package",
+  "main": "dist/packageSkeleton.js",
+  "config": {
+    "src": "src/packageSkeleton.ts",
+    "moduleName": "packageSkeleton"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nuclei/package-skeleton"
+  },
+  "bugs": {
+    "url": "http://github.com/nuclei/package-skeleton/issues"
+  },
+  "keywords": [
+    "vanilla web components",
+    "responsive image"
+  ],
+  "author": "Lukas Oppermann",
+  "license": "MIT",
+  "devDependencies": {
+    "readyjs": "^2.0.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-watch": "^3.2.2",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2",
+    "standard-readme": "^2.0.2",
+    "typescript": "^2.3.2",
+    "typescript-eslint-parser": "^2.1.0"
+  },
+  "scripts": {
+    "build": "npm run test && rollup -c && rollup -c --format=iife --output=dist/$npm_package_config_moduleName.iffe.js --target=es5",
+    "build:watch": "npm run build -- -w",
+    "test": "standard 'src/*.js' --parser typescript-eslint-parser | snazzy && tsc src/*.ts --noEmit --pretty --alwaysStrict --noUnusedLocals --target ES5 --lib es6,dom && standard-readme"
+  }
+}
