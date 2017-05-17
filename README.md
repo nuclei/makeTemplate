@@ -4,7 +4,7 @@
 ## install
 
 ```
-$ npm install nuclei/makeTemplate
+$ npm install make-template
 ```
 
 ## usage
