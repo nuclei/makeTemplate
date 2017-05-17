@@ -1,4 +1,4 @@
-# makeTemplate
+# make-template
 > Create a template node from a template string
 
 ## install

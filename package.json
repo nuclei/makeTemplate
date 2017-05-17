@@ -1,6 +1,6 @@
 {
-  "name": "makeTemplate",
-  "version": "0.0.0",
+  "name": "make-template",
+  "version": "1.0.0",
   "description": "Small utility to turn a template string into a template node",
   "main": "dist/makeTemplate.js",
   "config": {
